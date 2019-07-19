@@ -1,0 +1,288 @@
+/*Afin de valider ton code CSS, clic sur la petite flèche en haut à droite de cette fenêtre. Pour rappel, tu peux jeter un oeil par ici pour en savoir un peu plus: https://blog.codepen.io/2017/10/11/analyze-css-now-using-stylelint/*/
+
+/*Ecris ici ton code CSS*/
+
+body {
+  background-image: url("https://st2.depositphotos.com/1273672/5309/v/950/depositphotos_53098969-stock-illustration-horizontal-retro-blue-circus.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin:0 auto;
+  width: 1000px;
+  font-family: 'Poor Story', cursive;
+  font-size: 20px;
+  font-style: unset;
+}
+
+h1, h2, h3{
+  font-family: 'Amatic SC', cursive;
+  margin: auto;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+
+/* ---- SECTION ---- */
+
+section {
+  background-color: rgba(0,138,255,0.8);
+  border-radius: 5px;
+  border-color: rgb(0,100,150) ;
+  border-style: solid;
+  padding: 20px;
+}
+section ul{
+  list-style-type: none;
+  display:flex;
+  margin-left: -20px;
+}
+
+section li{
+  background-color: rgba(0,0,0,0.8);
+  border: 2px black solid;
+  border-radius: 3%;
+  margin: 0px 10px 0px 0px;
+  padding: 0px 10px 0px 10px;
+  color: white;
+  font-size: 20px;
+}
+/* ----HEADER----- */
+
+header h1{
+  text-align: center;
+  color: rgba(245, 127, 17, 0.8);
+  text-shadow: 0 0 20px rgba(29, 43, 68, 1);
+  font-size: 150px;
+  margin-bottom: 0;
+  margin-top: 50px;
+}
+
+/* ---- NAVIGATION --- */
+
+nav{
+  font-family: 'Amatic SC', cursive;
+  background-color: rgba(0,138,255,0.8);
+  color : blueviolet;
+  border-radius: 5px;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  border-radius: 5px;
+  border-color: rgb(0,100,150) ;
+  border-style: solid;
+}
+nav li {
+  list-style-type: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin: auto;
+  padding: 15px 0px 15px 0;
+}
+nav li a{
+  text-decoration: none;
+  color: black;
+}
+/* ----- PERFORMANCES ----- */
+.performances{
+  background-color: rgba(0,100,150,0.5);
+  width: 280px;
+  border-radius: 5px;
+  font-size: 40px;
+  text-align: center;
+}
+.titre1{
+  text-align: center;
+}
+.titre2{
+  text-align: center;
+}
+.titre3{
+  text-align: center;
+}
+#rire,#rever,#emerveiller{
+  border-radius: 10%;
+  margin: auto;
+}
+#rire{
+  width: 250px;
+  height: 250px;
+  background-image: url(http://www.coin-des-animateurs.com/wp-content/uploads/2016/04/cirque.jpg);
+  background-position: center;
+}
+#rever{
+  width: 320px;
+  height: 250px;
+  background-image: url(http://www.sefaireaider.com/images/metiers/magicien-prestidigitateur.jpg);
+  background-position: center;
+}
+/* ---- Diaporama ---- */
+.contener_slideshow
+  {
+    width:250px;
+    height:250px;
+    border-radius: 10%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+  }
+  .slid_1, .slid_2, .slid_3
+  {
+    position: absolute;
+    width:250px;
+    height:250px;
+  }
+  .slid_1{left: 0;}
+  .slid_2{left: 610px;}
+  .slid_3{left: 1220px;}
+  .contener_slide
+  {
+    width: 250px;
+    height: 250px;
+    left:0px;
+    position: absolute;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-name: anim_slide;
+    -moz-animation-duration: 10s;
+    -moz-animation-iteration-count:infinite;
+    -moz-animation-name: anim_slide;
+    -ms-animation-duration: 10s;
+    -ms-animation-iteration-count:infinite;
+    -ms-animation-name: anim_slide;
+    animation-duration: 10s;
+    animation-iteration-count:infinite;
+    animation-name: anim_slide;
+  }
+  @-webkit-keyframes anim_slide 
+  {
+    0% {left:0px;}
+    22% {left:0px;}
+    33% {left:-610px;}
+    45% {left:-610px;}
+    66% {left:-1220px;}
+    90% {left:-1220px;}
+  }
+  @-moz-keyframes anim_slide 
+  {
+    0% {left:0px;}
+    22% {left:0px;}
+    33% {left:-610px;}
+    45% {left:-610px;}
+    66% {left:-1220px;}
+    90% {left:-1220px;}
+  }
+  @-ms-keyframes anim_slide 
+  {
+    0% {left:0px;}
+    22% {left:0px;}
+    33% {left:-610px;}
+    45% {left:-610px;}
+    66% {left:-1220px;}
+    90% {left:-1220px;}
+  }
+  @keyframes anim_slide 
+  {
+    0% {left:0px;}
+    22% {left:0px;}
+    33% {left:-610px;}
+    45% {left:-610px;}
+    66% {left:-1220px;}
+    90% {left:-1220px;}
+  }
+section h3{
+  font-size: 25px;
+  font-weight: bold;
+}
+/* ---- ABOUT US ---- */
+#section_about{
+  text-align: center;
+}
+.a_propos{
+ /* background-color: rgba(0,138,255,0.8);*/
+ background-color: rgba(0,100,150,0.5);
+  font-size: 40px;
+  text-align: center;
+  width: 350px;
+  padding: 0px 10px 10px 10px;
+  border-radius: 5px;
+}
+/* ---- PRIX ---- */
+.prix{
+  background-color: rgba(0,100,150,0.5);
+  text-align: center;
+  border-radius: 5px;
+  font-size: 40px;
+  width: 110px;
+  padding: 10px 10px 10px 10px;
+}
+table{
+  background-color: rgba(255,255,255,0.7);
+  table-layout:auto;
+  width: 80%;
+  text-align: center;
+  margin: 10px auto;
+  border: 4px solid black;
+  border-collapse: collapse;
+  
+}
+tr td{
+  padding: 15px;
+  border: 3px solid black;
+}
+/* ---- CONTACT ----*/
+.nous_contacter{
+  background-color: rgba(0,100,150,0.5);
+  text-align: center;
+  width: 300px;
+  padding: 10px 10px 10px 10px;
+  border-radius: 5px;
+  font-size: 40px;
+}
+.contact_css{
+  text-align: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.google_map{
+  border-radius: 10%;
+  margin-bottom: 50px;
+  text-align: center;
+  width: 140px;
+  padding: 10px 10px 10px 10px;
+ 
+}
+.form{
+  margin: auto;
+  width: 700px;
+}
+span{
+  font-family: 'Amatic SC', cursive;
+  font-size: 40px;
+  margin: 0px 70px 0px 0px;
+}
+/* ---- FOOTER ---- */
+.mylink{
+  color: white;
+  text-align: center;
+}
+footer{
+ /* background-color:rgba(0, 100, 150, 0.5);*/
+ background-color: rgba(0,138,255,0.8);
+  border-radius: 5px;
+  padding: 1px;
+  margin-top: 10px;
+  text-align: center;
+}
+footer a {
+  font-family: 'Poor Story', cursive;
+  font-weight: bold;
+  font-size: 17px;
+  color:black;
+  text-align: center;
+  text-decoration: none;
+  padding: 5px;
+  margin-top: 10px;
+}
+.reseau_sociaux{
+  text-align: right;
+}
